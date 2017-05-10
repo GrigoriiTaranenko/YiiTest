@@ -1,0 +1,289 @@
+2017/05/05 11:40:53 [error] 6898#0: *2 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\gii\generators\model\Generator::yii\gii\generators\model\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\gii\generat...', 'yii\gii\generat...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\gii\generat...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /var/www/html/advanced/test/ve" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=gii%2Fdefault%2Fview&id=model HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/index.php?r=gii"
+2017/05/05 11:43:17 [error] 6898#0: *27 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\gii\generators\model\Generator::yii\gii\generators\model\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\gii\generat...', 'yii\gii\generat...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\gii\generat...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /var/www/html/advanced/test/ve" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=gii%2Fdefault%2Fview&id=model HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/index.php?r=gii"
+2017/05/05 13:43:57 [error] 6900#0: *99 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/E" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?ProductSearch%5Bname%5D=eqwqw&ProductSearch%5Bid%5D=&ProductSearch%5BPrice%5D=&r=product%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/index.php?r=product%2Findex"
+2017/05/05 14:03:00 [error] 6900#0: *145 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/E" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=product HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com"
+2017/05/05 14:04:06 [error] 6900#0: *151 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/E" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=product HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com"
+2017/05/05 14:04:15 [error] 6900#0: *151 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/E" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=product HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com"
+2017/05/05 14:04:39 [error] 6900#0: *151 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/E" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=product%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 13:01:02 [error] 1689#0: *317 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem(NULL, NULL, 'yii\widgets\Bas...', 'yii\widgets\{cl...', Array, 15)
+#5" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 13:53:21 [error] 1689#0: *324 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem(NULL, NULL, 'yii\widgets\Bas...', 'yii\widgets\{cl...', Array, 15)
+#5" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 14:21:04 [error] 1689#0: *361 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function andFilterWhere() on a non-object in /var/www/html/advanced/test/frontend/models/BookSearch.php on line 68" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 14:21:25 [error] 1689#0: *361 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function andFilterWhere() on a non-object in /var/www/html/advanced/test/frontend/models/BookSearch.php on line 67" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 14:21:28 [error] 1689#0: *361 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function andFilterWhere() on a non-object in /var/www/html/advanced/test/frontend/models/BookSearch.php on line 67" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 14:21:35 [error] 1689#0: *361 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function andFilterWhere() on a non-object in /var/www/html/advanced/test/frontend/models/BookSearch.php on line 68" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 14:21:37 [error] 1689#0: *361 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function andFilterWhere() on a non-object in /var/www/html/advanced/test/frontend/models/BookSearch.php on line 68" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 14:23:03 [error] 1689#0: *370 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Call to a member function andFilterWhere() on a non-object in /var/www/html/advanced/test/frontend/models/BookSearch.php on line 67" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 14:25:05 [error] 1689#0: *370 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/E" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 14:25:23 [error] 1689#0: *370 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/E" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 14:26:03 [error] 1689#0: *370 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/E" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 14:26:06 [error] 1689#0: *370 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/E" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 14:26:08 [error] 1689#0: *370 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/E" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 14:31:01 [error] 1689#0: *396 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/E" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 14:33:18 [error] 1689#0: *403 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/E" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 14:36:00 [error] 1689#0: *411 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/E" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 14:54:45 [error] 1689#0: *413 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem(NULL, NULL, 'yii\widgets\Bas...', 'yii\widgets\{cl...', Array, 15)
+#5" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 15:02:56 [error] 1689#0: *419 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/E" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 15:03:09 [error] 1689#0: *419 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/E" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 15:03:47 [error] 1689#0: *419 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/E" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 15:04:06 [error] 1689#0: *419 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/E" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 15:04:30 [error] 1689#0: *419 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/E" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 15:05:09 [error] 1689#0: *419 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/E" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 15:05:34 [error] 1689#0: *419 FastCGI sent in stderr: "PHP message: PHP Parse error:  syntax error, unexpected '$dataProvider' (T_VARIABLE) in /var/www/html/advanced/test/frontend/models/BookSearch.php on line 47" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 15:46:46 [error] 23780#0: *1 FastCGI sent in stderr: "PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com"
+2017/05/10 15:46:46 [error] 23780#0: *1 FastCGI sent in stderr: "PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'" while reading upstream, client: 127.0.0.1, server: available.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com"
+2017/05/10 15:46:47 [error] 23780#0: *1 FastCGI sent in stderr: "PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=debug%2Fdefault%2Ftoolbar&tag=59130bb69c8d4 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 15:46:47 [error] 23780#0: *1 FastCGI sent in stderr: "PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'" while reading upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=debug%2Fdefault%2Ftoolbar&tag=59130bb69c8d4 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 15:48:39 [error] 24011#0: *1 FastCGI sent in stderr: "PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com"
+2017/05/10 15:48:39 [error] 24011#0: *1 FastCGI sent in stderr: "PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'" while reading upstream, client: 127.0.0.1, server: available.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com"
+2017/05/10 15:48:39 [error] 24011#0: *1 FastCGI sent in stderr: "PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=debug%2Fdefault%2Ftoolbar&tag=59130c270ca5a HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 15:48:39 [error] 24011#0: *1 FastCGI sent in stderr: "PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'" while reading upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=debug%2Fdefault%2Ftoolbar&tag=59130c270ca5a HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 15:48:41 [error] 24011#0: *1 FastCGI sent in stderr: "PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 15:48:41 [error] 24011#0: *1 FastCGI sent in stderr: "PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'" while reading upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 15:48:42 [error] 24011#0: *1 FastCGI sent in stderr: "PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=debug%2Fdefault%2Ftoolbar&tag=59130c2992992 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/index.php?r=book%2Findex"
+2017/05/10 15:48:42 [error] 24011#0: *1 FastCGI sent in stderr: "PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'" while reading upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=debug%2Fdefault%2Ftoolbar&tag=59130c2992992 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/index.php?r=book%2Findex"
+2017/05/10 15:49:09 [error] 24011#0: *1 FastCGI sent in stderr: "PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 15:49:09 [error] 24011#0: *1 FastCGI sent in stderr: "PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'" while reading upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 15:49:09 [error] 24011#0: *1 FastCGI sent in stderr: "PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=debug%2Fdefault%2Ftoolbar&tag=59130c44da2a3 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/index.php?r=book%2Findex"
+2017/05/10 15:49:09 [error] 24011#0: *1 FastCGI sent in stderr: "PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'" while reading upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=debug%2Fdefault%2Ftoolbar&tag=59130c44da2a3 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/index.php?r=book%2Findex"
+2017/05/10 15:49:24 [error] 24011#0: *1 FastCGI sent in stderr: "PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com"
+2017/05/10 15:49:24 [error] 24011#0: *1 FastCGI sent in stderr: "PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'" while reading upstream, client: 127.0.0.1, server: available.com, request: "GET / HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com"
+2017/05/10 15:49:24 [error] 24011#0: *1 FastCGI sent in stderr: "PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=debug%2Fdefault%2Ftoolbar&tag=59130c543c011 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 15:49:24 [error] 24011#0: *1 FastCGI sent in stderr: "PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'" while reading upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=debug%2Fdefault%2Ftoolbar&tag=59130c543c011 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 15:49:28 [error] 24011#0: *1 FastCGI sent in stderr: "PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 15:49:28 [error] 24011#0: *1 FastCGI sent in stderr: "PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'" while reading upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 15:49:28 [error] 24011#0: *1 FastCGI sent in stderr: "PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=debug%2Fdefault%2Ftoolbar&tag=59130c582199b HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/index.php?r=book%2Findex"
+2017/05/10 15:49:28 [error] 24011#0: *1 FastCGI sent in stderr: "PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'" while reading upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=debug%2Fdefault%2Ftoolbar&tag=59130c582199b HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/index.php?r=book%2Findex"
+2017/05/10 15:54:04 [error] 24011#0: *26 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock", host: "available.com", referrer: "http://available.com/"
+2017/05/10 15:54:26 [error] 24011#0: *26 FastCGI sent in stderr: "PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 15:54:27 [error] 24011#0: *26 FastCGI sent in stderr: "PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=debug%2Fdefault%2Ftoolbar&tag=59130d82296fc HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/index.php?r=book%2Findex"
+2017/05/10 15:55:23 [error] 24011#0: *44 FastCGI sent in stderr: "PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/"
+2017/05/10 15:55:23 [error] 24011#0: *44 FastCGI sent in stderr: "PHP message: XDebug could not open the remote debug file '/tmp/xdebug.log'" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=debug%2Fdefault%2Ftoolbar&tag=59130dbb4bc80 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/index.php?r=book%2Findex"
+2017/05/10 16:33:52 [error] 1674#0: *113 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?BookSearch%5Bname%5D=%D0%92+%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0%D1%85&BookSearch%5Byear%5D=89888&r=book%2Findex&sort=year HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock", host: "available.com", referrer: "http://available.com/index.php?r=book%2Findex&BookSearch%5Bname%5D=%D0%92+%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0%D1%85&BookSearch%5Byear%5D=898&sort=year"
