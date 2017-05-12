@@ -37,6 +37,6 @@ class BookTest extends Unit
         $model->year='qw1233';
         $model->id_book_type=123;
         expect('model is not valid', $model->validate())->false();
-
     }
+
 }

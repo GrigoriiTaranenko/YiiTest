@@ -16,12 +16,12 @@ class BookSearch extends Book
      * @inheritdoc
      */
     var $type;
-    public $fkBookType;
+    public $idBookType;
     public function rules()
     {
         return [
-            [['id', 'year', 'fk_book_type'], 'integer'],
-            [['name', 'fkBookType'], 'safe'],
+            [['id', 'year', 'id_book_type'], 'integer'],
+            [['name', 'idBookType'], 'safe'],
         ];
     }
 
@@ -52,10 +52,10 @@ class BookSearch extends Book
             'attributes'=>[
                 'name',
                 'year',
-                'fk_book_type'
+                'id_book_type'
             ]
         ]);
-        $dataProvider->sort->attributes['fkBookType']=[
+        $dataProvider->sort->attributes['idBookType']=[
             'asc'=>['book_type.type'=>SORT_ASC],
             'desc'=>['book_type.type'=>SORT_DESC]
             ];
@@ -73,11 +73,11 @@ class BookSearch extends Book
         $query->andFilterWhere([
             'id' => $this->id,
             'year' => $this->year,
-            'fk_book_type' => $this->fk_book_type,
+            'id_book_type' => $this->id_book_type,
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])
-            ->andFilterWhere(['like', 'book_type.type',$this->fkBookType]);
+            ->andFilterWhere(['like', 'book_type.type',$this->idBookType]);
 
         return $dataProvider;
     }

@@ -15,9 +15,9 @@ use yii\db\ActiveRecord;
  * @property integer $id
  * @property string $name
  * @property integer $year
- * @property integer $fk_book_type
+ * @property integer $id_book_type
  *
- * @property BookType $fkBookType
+ * @property BookType $idBookType
  */
 class Book extends ActiveRecord
 {
@@ -28,10 +28,10 @@ class Book extends ActiveRecord
 
     public function rules(){
         return [
-            [['name', 'year'], 'required'],
+            [['name', 'year', 'id_book_type'], 'required'],
             [['year'], 'integer'],
             [['name'],'string', 'max'=>150],
-            [['id_book_type'], 'exist', 'skipOnError'=>true, 'targetClass'=>BookType::className(), 'targetAttribute'=>['fk_book_type'=>'id']],
+            [['id_book_type'], 'exist', 'skipOnError'=>true, 'targetClass'=>BookType::className(), 'targetAttribute'=>['id_book_type'=>'id']],
         ];
     }
     public function attributeLabels(){
@@ -47,7 +47,7 @@ class Book extends ActiveRecord
             'fulltype'=>'fulltype'
         ];
     }
-    public function getFkBookType()
+    public function getIdBookType()
     {
         return $this->hasOne(BookType::className(), ['id' => 'id_book_type']);
     }
