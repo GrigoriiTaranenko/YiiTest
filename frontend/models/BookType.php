@@ -56,6 +56,6 @@ class BookType extends \yii\db\ActiveRecord
      */
     public function getBooks()
     {
-        return $this->hasMany(Book::className(), ['fk_book_type' => 'id']);
+        return $this->hasMany(Book::className(), ['id_book_type' => 'id']);
     }
 }

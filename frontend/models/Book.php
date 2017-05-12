@@ -31,7 +31,7 @@ class Book extends ActiveRecord
     public function rules(){
         return [
             [['name', 'year', 'id_book_type'], 'required'],
-            [['year'], 'integer'],
+            [['year', 'id_book_type'], 'integer'],
             [['name'],'string', 'max'=>150],
             [['id_book_type'], 'exist', 'skipOnError'=>true, 'targetClass'=>BookType::className(), 'targetAttribute'=>['id_book_type'=>'id']],
         ];
