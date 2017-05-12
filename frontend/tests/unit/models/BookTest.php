@@ -25,6 +25,7 @@ class BookTest extends Unit
             'year'=>2005,
             'id_book_type'=>3
         ])->execute();
+        $this->book = new Book();
     }
 
   /*  public function testValidationEmptyValues(){
@@ -44,7 +45,6 @@ class BookTest extends Unit
     }*/
     public function testValidation()
     {
-        $this->book = new Book();
 
         $this->specify("Empty Values", function() {
             $this->book->name = null;
@@ -70,5 +70,13 @@ class BookTest extends Unit
             $this->book->id_book_type=2;
             $this->assertTrue($this->book->validate());
         });
+    }
+    public function testSaveDB(){
+        $this->book->name='Grigo';
+        $this->book->year=12;
+        $this->book->id_book_type=3;
+        $this->book->save();
+        $book = Book::findOne(1);
+       // $this->assertEquals($book->id, 1, 'Hello');
     }
 }
