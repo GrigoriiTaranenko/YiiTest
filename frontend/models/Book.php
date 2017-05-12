@@ -59,7 +59,10 @@ class Book extends ActiveRecord
     }
     public function getMapType(){
         $Mas=BookType::find()->asArray()->all();
-        return ArrayHelper::map($Mas, 'id', 'type');
+        $Mas=ArrayHelper::map($Mas, 'id', 'type');
+        $Mas[0]='Все';
+        ksort($Mas);
+        return $Mas;
     }
     public function getTypeModel(){
         $Mas=BookType::find()->asArray()->all();
