@@ -1,6 +1,8 @@
 class_name: UnitTester
 modules:
-    enabled:
-        - Yii2:
-            part: [orm, email, fixtures]
-        - Asserts
+    enabled:  [Asserts, Db]
+    config:
+      Db:
+        'dsn': 'pgsql:host=localhost;port=5432;dbname=mydb'
+        'user': 'postgres'
+        'password': '96521`'
