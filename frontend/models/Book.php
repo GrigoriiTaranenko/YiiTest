@@ -31,7 +31,7 @@ class Book extends ActiveRecord
             [['name', 'year'], 'required'],
             [['year'], 'integer'],
             [['name'],'string', 'max'=>150],
-            [['fk_book_type'], 'exist', 'skipOnError'=>true, 'targetClass'=>BookType::className(), 'targetAttribute'=>['fk_book_type'=>'id']],
+            [['id_book_type'], 'exist', 'skipOnError'=>true, 'targetClass'=>BookType::className(), 'targetAttribute'=>['fk_book_type'=>'id']],
         ];
     }
     public function attributeLabels(){
@@ -39,7 +39,7 @@ class Book extends ActiveRecord
             'id'=>'номер книги',
             'name'=>'Имя книги',
             'year'=>'Год выпуска',
-            'fk_book_type'=>'Жанр книги'
+            'id_book_type'=>'Жанр книги'
         ];
     }
     public function fullType(){
@@ -49,6 +49,6 @@ class Book extends ActiveRecord
     }
     public function getFkBookType()
     {
-        return $this->hasOne(BookType::className(), ['id' => 'fk_book_type']);
+        return $this->hasOne(BookType::className(), ['id' => 'id_book_type']);
     }
 }
