@@ -9,6 +9,8 @@
 namespace frontend\models;
 
 use yii\db\ActiveRecord;
+use yii\helpers\ArrayHelper;
+
 /**
  * This is the model class for table "book".
  *
@@ -39,7 +41,8 @@ class Book extends ActiveRecord
             'id'=>'номер книги',
             'name'=>'Имя книги',
             'year'=>'Год выпуска',
-            'id_book_type'=>'Жанр книги'
+            'id_book_type'=>'Жанр книги',
+            'type'=>'Жанр'
         ];
     }
     public function fullType(){
@@ -50,5 +53,16 @@ class Book extends ActiveRecord
     public function getIdBookType()
     {
         return $this->hasOne(BookType::className(), ['id' => 'id_book_type']);
+    }
+    public function getType(){
+        return $this->idBookType->type;
+    }
+    public function getMapType(){
+        $Mas=BookType::find()->asArray()->all();
+        return ArrayHelper::map($Mas, 'id', 'type');
+    }
+    public function getTypeModel(){
+        $Mas=BookType::find()->asArray()->all();
+        return ArrayHelper::map($Mas, 'id', 'type');
     }
 }

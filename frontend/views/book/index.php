@@ -28,8 +28,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'name',
             'year',
             [
-              'attribute'=>'Жанр',
-              'value'=>'fkBookType.type'
+                'attribute' => 'type',
+                'filter' => Html::activeDropDownList($searchModel, 'type',$searchModel->mapType),
             ],
             ['class' => 'yii\grid\ActionColumn'],
         ],

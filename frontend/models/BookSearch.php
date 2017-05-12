@@ -15,13 +15,12 @@ class BookSearch extends Book
     /**
      * @inheritdoc
      */
-    var $type;
-    public $idBookType;
+    public $type;
     public function rules()
     {
         return [
             [['id', 'year', 'id_book_type'], 'integer'],
-            [['name', 'idBookType'], 'safe'],
+            [['name', 'idBookType','type'], 'safe'],
         ];
     }
 
@@ -52,13 +51,12 @@ class BookSearch extends Book
             'attributes'=>[
                 'name',
                 'year',
-                'id_book_type'
+                'type'=>[
+                    'asc'=>['genre.type'=>SORT_ASC],
+                    'desc'=>['genre.type'=>SORT_DESC]
+                ]
             ]
         ]);
-        $dataProvider->sort->attributes['idBookType']=[
-            'asc'=>['book_type.type'=>SORT_ASC],
-            'desc'=>['book_type.type'=>SORT_DESC]
-            ];
         $this->load($params);
 
         if (!$this->validate()) {
@@ -67,18 +65,16 @@ class BookSearch extends Book
             return $dataProvider;
         }
 
-
-        // grid filtering conditions
-
+        $query->JoinWith(['idBookType'=>function($q){
+            $q->from('book_type genre');
+        }]);
         $query->andFilterWhere([
             'id' => $this->id,
             'year' => $this->year,
-            'id_book_type' => $this->id_book_type,
+            'id_book_type' => $this->type,
         ]);
-
         $query->andFilterWhere(['like', 'name', $this->name])
             ->andFilterWhere(['like', 'book_type.type',$this->idBookType]);
-
         return $dataProvider;
     }
 }
