@@ -13,11 +13,12 @@ extensions:
     enabled:
         - Codeception\Extension\RunFailed
 modules:
-    enabled
+    enabled:
     config:
         Db:
             dsn: 'pgsql:host=localhost;port=5432;dbname=mydb'
             user: 'postgres'
             password: '96521`'
             charset: 'utf8'
-            dump: tests/_data/dump.sql
+            dump: 'tests/_data/dump.sql'
+

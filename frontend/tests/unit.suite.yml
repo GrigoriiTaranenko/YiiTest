@@ -3,6 +3,8 @@ modules:
     enabled:  [Asserts, Db]
     config:
       Db:
-        'dsn': 'pgsql:host=localhost;port=5432;dbname=mydb'
-        'user': 'postgres'
-        'password': '96521`'
+        dsn: 'pgsql:host=localhost;port=5432;dbname=mydb'
+        user: 'postgres'
+        password: '96521`'
+        charset: 'utf8'
+        dump: 'tests/_data/dump.sql'
