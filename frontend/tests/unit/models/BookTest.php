@@ -9,13 +9,17 @@
 namespace frontend\tests\unit\models;
 use Yii;
 use frontend\models\Book;
-use Codeception\Test\Unit;
-
+use common\fixtures\BookFixtures;
+use \Codeception\Test\Unit;
 
 class BookTest extends Unit
 {
+
     use \Codeception\Specify;
+
     private $book;
+    protected $tester;
+
     public function _before(){
         $this->book = new Book();
              Yii::$app->db->createCommand()->insert(Book::tableName(), [
@@ -23,6 +27,12 @@ class BookTest extends Unit
                  'year'=>2005,
                  'id_book_type'=>2
              ])->execute();
+        $this->tester->haveFixtures([
+            'bookFixture' => [
+                'class' => BookFixtures::className(),
+                'dataFile' => codecept_data_dir() . 'book.php'
+            ]]
+        );
     }
 
    /* public function testValidationEmptyValues(){
@@ -69,13 +79,17 @@ class BookTest extends Unit
     }
     public function testSaveDB()
     {
-            $this->specify("Wrong Values", function(){
-            $this->book->name = 'Grigo';
-            $this->book->year = 12;
-            $this->book->id_book_type = 10;
-            $this->assertFalse($this->book->validate());
-            $this->assertFalse($this->book->save());
-        });
+            $this->specify("Wrong Values", function() {
+                $this->book->name = 'Grigo';
+                $this->book->year = 12;
+                $this->book->id_book_type = 3;
+                $this->book->validate();
+                //$this->tester->SeeInDatabase('book', ['id' => 17]);
+               // $this->tester->haveRecord('frontend\models\Book' ,array('name' => 'Davert', 'year'=>23, 'id_book_type'=>4));
+                //$this->tester->DontSeeRecord('frontend\models\Book', array('name'=>'Davrt'));
+                //$this->tester->SeeRecord('frontend\models\Book', array('id'=>17));
+                $this->tester->SeeRecord('frontend\models\Book',array('year'=>2012));
+            });
         //       $book = Book::findOne(1);
         // $this->assertEquals($book->id, 1, 'Hello');
     }
