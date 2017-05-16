@@ -87,7 +87,7 @@ class BookTest extends Unit
                 //$this->tester->SeeInDatabase('book', ['id' => 17]);
                // $this->tester->haveRecord('frontend\models\Book' ,array('name' => 'Davert', 'year'=>23, 'id_book_type'=>4));
                 //$this->tester->DontSeeRecord('frontend\models\Book', array('name'=>'Davrt'));
-                //$this->tester->SeeRecord('frontend\models\Book', array('id'=>17));
+               // $this->tester->SeeRecord('frontend\models\Book', array('id'=>17));
                 $this->tester->SeeRecord('frontend\models\Book',array('year'=>2012));
             });
         //       $book = Book::findOne(1);
