@@ -5,5 +5,8 @@ return [
         'assetManager' => [
             'basePath' => __DIR__ . '/../web/assets',
         ],
+        'db' => [
+            'dsn' => 'pgsql:host=localhost;port=5432;dbname=mydb',
+        ]
     ],
 ];

@@ -17,12 +17,13 @@ class BookTest extends Unit
     use \Codeception\Specify;
     private $book;
     public function _before(){
-        $this->book = new Book();
+    /*    $this->book = new Book();
              Yii::$app->db->createCommand()->insert(Book::tableName(), [
-                 'name'=>'Кубок Шустера',
+                 'name'=>'Кубок',
                  'year'=>2005,
-                 'id_book_type'=>2
-             ])->execute();
+                 'id_book_type'=>3
+             ])->execute();*/
+        $this->book = new Book();
     }
 
    /* public function testValidationEmptyValues(){
@@ -71,8 +72,8 @@ class BookTest extends Unit
     {
             $this->specify("Wrong Values", function(){
             $this->book->name = 'Grigo';
-            $this->book->year = 12;
-            $this->book->id_book_type = 10;
+            $this->book->year = '12asdsa';
+            $this->book->id_book_type = 3;
             $this->assertFalse($this->book->validate());
             $this->assertFalse($this->book->save());
         });
