@@ -57,6 +57,8 @@ class BookSearch extends Book
                 ]
             ]
         ]);
+
+
         $this->load($params);
         if ($this->type==='0') $this->type='';
         if (!$this->validate()) {
@@ -75,6 +77,7 @@ class BookSearch extends Book
         ]);
         $query->andFilterWhere(['like', 'name', $this->name])
             ->andFilterWhere(['like', 'book_type.type',$this->idBookType]);
+
         return $dataProvider;
     }
 }

@@ -22,6 +22,7 @@ class BookSearchTest extends Unit
 
     protected $dataProvider;
     protected $bookSearch;
+    /** @var BookSearch $searchModel  */
     protected $searchModel;
     protected $book;
     protected $tester;
@@ -42,6 +43,7 @@ class BookSearchTest extends Unit
 
     }
     function testSort(){
+
         $this->specify("Empty Values", function (){
             $this->bookSearch=$this->searchModel->search([
                 'r'=>['book/search']
@@ -93,19 +95,19 @@ class BookSearchTest extends Unit
                 ],
             ]);
         });
+
+        $this->specify('sort arguments', function (){
+            $this->bookSearch=$this->searchModel->search([
+                'r'=>['book/index'],
+                'BookSearch'=>[
+                    'name'=>'',
+                    'year'=>'',
+                    'type'=>'0'
+                ],
+                'sort' => 'name',
+            ]);
+            $query=$this->bookSearch->getModels();
+            $this->assertEquals($query[0]->name, 'Игры престолов');
+        });
     }
 }
-/*‌array (
-    0 =>
-  array (
-      'id' => 17,
-      'name' => 'Шустер',
-      'year' => 1995,
-      'id_book_type' => 2,
-      'idBookType' =>
-          array (
-              'id' => 2,
-              'type' => 'Фантастика',
-          ),
-  ),
-)*/
