@@ -10,6 +10,7 @@ namespace frontend\tests\unit\models;
 use Yii;
 use frontend\models\Book;
 use common\fixtures\BookFixtures;
+use common\fixtures\BookTypeFixture;
 use \Codeception\Test\Unit;
 
 class BookTest extends Unit
@@ -20,36 +21,24 @@ class BookTest extends Unit
     private $book;
     protected $tester;
 
-    public function _before(){
-        $this->book = new Book();
-             Yii::$app->db->createCommand()->insert(Book::tableName(), [
-                 'name'=>'Кубок Шустера',
-                 'year'=>2005,
-                 'id_book_type'=>2
-             ])->execute();
+    public function _before()
+    {
         $this->tester->haveFixtures([
-            'bookFixture' => [
-                'class' => BookFixtures::className(),
-                'dataFile' => codecept_data_dir() . 'book.php'
-            ]]
+
+                'book' => [
+                    'class' => BookFixtures::className(),
+                    'dataFile' => codecept_data_dir() . 'book.php'
+                ],
+                'book_type' => [
+                    'class' => BookTypeFixture::className(),
+                    'dataFile' => codecept_data_dir() . 'booktype.php'
+                ]
+            ]
         );
+        $this->book = new Book();
     }
 
-   /* public function testValidationEmptyValues(){
-        $model=new Book();
-        expect('model is not valid', $model->validate())->false();
-        expect('name has error', $model->getErrors())->hasKey('name');
-        expect('year has error', $model->getErrors())->hasKey('year');
-        expect('book type has error', $model->getErrors())->hasKey('id_book_type');
-    }
-    public function testValidationWrongValues(){
-        $model=new Book();
-        $model->name='Wrong';
-        $model->year='qw1233';
-        $model->id_book_type='weqeqw41';
-        expect('model is not valid', $model->validate())->false();
-        expect('id_book_type is valid', $model->getErrors())->hasKey('id_book_type');
-    }*/
+
     public function testValidation()
     {
         $this->specify("Empty Values", function() {
@@ -73,7 +62,7 @@ class BookTest extends Unit
         $this->specify("is ok", function() {
             $this->book->name = 'davert';
             $this->book->year=23;
-            $this->book->id_book_type=2;
+            $this->book->id_book_type=3;
             $this->assertTrue($this->book->validate());
         });
     }
@@ -84,13 +73,14 @@ class BookTest extends Unit
                 $this->book->year = 12;
                 $this->book->id_book_type = 3;
                 $this->book->validate();
-                //$this->tester->SeeInDatabase('book', ['id' => 17]);
-               // $this->tester->haveRecord('frontend\models\Book' ,array('name' => 'Davert', 'year'=>23, 'id_book_type'=>4));
-                //$this->tester->DontSeeRecord('frontend\models\Book', array('name'=>'Davrt'));
-               // $this->tester->SeeRecord('frontend\models\Book', array('id'=>17));
-                $this->tester->SeeRecord('frontend\models\Book',array('year'=>2012));
+                $this->tester->SeeRecord('frontend\models\Book',array('id'=>2));
             });
-        //       $book = Book::findOne(1);
-        // $this->assertEquals($book->id, 1, 'Hello');
+      /*         $book = Book::findOne(1);
+         $this->assertEquals($book->id, 1, 'Hello');
+        $this->tester->SeeInDatabase('book', ['id' => 17]);
+         $this->tester->haveRecord('frontend\models\Book' ,array('name' => 'Davert', 'year'=>23, 'id_book_type'=>4));
+        $this->tester->DontSeeRecord('frontend\models\Book', array('name'=>'Davrt'));
+         $this->tester->SeeRecord('frontend\models\Book', array('id'=>17));*/
+
     }
 }
