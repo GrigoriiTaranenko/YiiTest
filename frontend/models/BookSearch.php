@@ -43,22 +43,28 @@ class BookSearch extends Book
     public function search($params)
     {
         $query = Book::find();
-        // add conditions that should always apply here
+        if (!array_key_exists('sort', $params))
+            $params['sort']='';
+
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
-        ]);
-        $dataProvider->setSort([
-            'attributes'=>[
-                'name',
-                'year',
-                'type'=>[
-                    'asc'=>['genre.type'=>SORT_ASC],
-                    'desc'=>['genre.type'=>SORT_DESC]
+            'sort' => [
+              /*  'defaultOrder' => [
+                    'name' => SORT_ASC
+                ],*/
+                'params'=>['sort'=>$params['sort']],
+                'attributes'=>[
+                    'name'=>[
+                        'asc'=>['name'=>SORT_ASC],
+                     ],
+                    'year',
+                    'type'=>[
+                        'asc'=>['genre.type'=>SORT_ASC],
+                        'desc'=>['genre.type'=>SORT_DESC]
+                    ]
                 ]
             ]
         ]);
-
-
         $this->load($params);
         if ($this->type==='0') $this->type='';
         if (!$this->validate()) {
@@ -70,13 +76,16 @@ class BookSearch extends Book
         $query->JoinWith(['idBookType'=>function($q){
             $q->from('book_type genre');
         }]);
+
         $query->andFilterWhere([
             'id' => $this->id,
             'year' => $this->year,
             'id_book_type' => $this->type,
         ]);
+
         $query->andFilterWhere(['like', 'name', $this->name])
             ->andFilterWhere(['like', 'book_type.type',$this->idBookType]);
+        $dataProvider->query;
 
         return $dataProvider;
     }

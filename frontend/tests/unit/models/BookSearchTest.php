@@ -38,7 +38,6 @@ class BookSearchTest extends Unit
                 ]
             ]
         );
-        $this->book=Book::find();
         $this->searchModel = new BookSearch();
 
     }

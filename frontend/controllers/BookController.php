@@ -37,6 +37,16 @@ class BookController extends Controller
     {
         $searchModel = new BookSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+      /*  $dataProvider = $searchModel->search([
+            'r'=>['book/index'],
+            'BookSearch'=>[
+                'name'=>'',
+                'year'=>'',
+                'type'=>'0'
+            ],
+            'sort' => 'name',
+        ]);*/
+
         $pos=$dataProvider->getModels();
         $si=$pos[0]->name;
         return $this->render('index', [
