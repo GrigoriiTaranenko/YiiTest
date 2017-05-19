@@ -37,18 +37,6 @@ class BookController extends Controller
     {
         $searchModel = new BookSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-      /*  $dataProvider = $searchModel->search([
-            'r'=>['book/index'],
-            'BookSearch'=>[
-                'name'=>'',
-                'year'=>'',
-                'type'=>'0'
-            ],
-            'sort' => 'name',
-        ]);*/
-
-        $pos=$dataProvider->getModels();
-        $si=$pos[0]->name;
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
@@ -70,13 +58,14 @@ class BookController extends Controller
     /**
      * Creates a new Book model.
      * If creation is successful, the browser will be redirected to the 'view' page.
-     * @return mixed
+     *  @return mixed
      */
     public function actionCreate()
     {
         $model = new Book();
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        $model->load(Yii::$app->request->post());
+     //   while (Book::find()->where(['id' => $model->id])->exists()) $model->id++;
+        if  ($model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [

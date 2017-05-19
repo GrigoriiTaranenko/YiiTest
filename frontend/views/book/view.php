@@ -32,7 +32,17 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'name',
             'year',
-            'id_book_type',
+            [
+                'attribute' => 'type',
+                'filter' => Html::activeDropDownList($model, 'type',$model->mapType),
+            ],
+            'isbn',
+            'description',
+            [
+                'attribute' => 'picture',
+                'format' => 'image',
+            ],
+
         ],
     ]) ?>
 

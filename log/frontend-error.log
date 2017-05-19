@@ -384,3 +384,289 @@ Stack trace:
 2017/05/18 14:45:17 [error] 1689#0: *852 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock", host: "available.com"
 2017/05/18 14:48:33 [error] 1689#0: *859 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock", host: "available.com"
 2017/05/18 14:54:03 [error] 1689#0: *859 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock", host: "available.com"
+2017/05/18 17:24:20 [error] 1691#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'frontend\components\Hello' not found in /var/www/html/advanced/test/frontend/views/book/index.php on line 38
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/advanced/test/frontend/web/index.php:0
+PHP message: PHP   2. yii\base\Application->run() /var/www/html/advanced/test/frontend/web/index.php:16
+PHP message: PHP   3. yii\web\Application->handleRequest($request = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Application.php:380
+PHP message: PHP   4. yii\base\Module->runAction($route = *uninitialized*, $params = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/web/Application.php:102
+PHP message: PHP   5. yii\base\Controller->runAction($id = *uninitialized*, $params = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Module.php:523
+PHP message: PHP   6. yii\base\InlineAction->runWithParams($params = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Controller.php:156
+PHP message: PHP   7. call_user_func_array(*uninitialized*, *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/InlineAction.php:57
+PHP message: PHP   8. frontend\controllers\BookController->actionIndex() /var/www/html/advanced/test/vendor/yiisoft/yii2/base/InlineAction.php:57
+PHP message: PHP   9. yii\base\Controller->render($view = *uninitialized*, $params = *uninitialized*) /var/www/html/advanced/test/frontend/controllers/BookController.php:55
+PHP message: PHP  10. yii\base\View->render($view = *uninitialized*, $params = *uninitialized*, $context = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Controller.php:381
+PHP message: PHP  11. yii\base\View->renderFile($viewFile = *uninitialized*, $params = *uninitialized*, $context = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php:152
+PHP message: PHP  12. yii\base\View->renderPhpFile($_file_ = *uninitialized*, $_params_ = *uni
+2017/05/18 17:24:45 [error] 1691#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'frontend\components\Hello' not found in /var/www/html/advanced/test/frontend/views/book/index.php on line 38
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/advanced/test/frontend/web/index.php:0
+PHP message: PHP   2. yii\base\Application->run() /var/www/html/advanced/test/frontend/web/index.php:16
+PHP message: PHP   3. yii\web\Application->handleRequest($request = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Application.php:380
+PHP message: PHP   4. yii\base\Module->runAction($route = *uninitialized*, $params = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/web/Application.php:102
+PHP message: PHP   5. yii\base\Controller->runAction($id = *uninitialized*, $params = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Module.php:523
+PHP message: PHP   6. yii\base\InlineAction->runWithParams($params = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Controller.php:156
+PHP message: PHP   7. call_user_func_array(*uninitialized*, *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/InlineAction.php:57
+PHP message: PHP   8. frontend\controllers\BookController->actionIndex() /var/www/html/advanced/test/vendor/yiisoft/yii2/base/InlineAction.php:57
+PHP message: PHP   9. yii\base\Controller->render($view = *uninitialized*, $params = *uninitialized*) /var/www/html/advanced/test/frontend/controllers/BookController.php:55
+PHP message: PHP  10. yii\base\View->render($view = *uninitialized*, $params = *uninitialized*, $context = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Controller.php:381
+PHP message: PHP  11. yii\base\View->renderFile($viewFile = *uninitialized*, $params = *uninitialized*, $context = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php:152
+PHP message: PHP  12. yii\base\View->renderPhpFile($_file_ = *uninitialized*, $_params_ = *uni
+2017/05/18 17:26:18 [error] 1691#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'frontend\components\Hello' not found in /var/www/html/advanced/test/frontend/views/book/index.php on line 38
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/advanced/test/frontend/web/index.php:0
+PHP message: PHP   2. yii\base\Application->run() /var/www/html/advanced/test/frontend/web/index.php:16
+PHP message: PHP   3. yii\web\Application->handleRequest($request = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Application.php:380
+PHP message: PHP   4. yii\base\Module->runAction($route = *uninitialized*, $params = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/web/Application.php:102
+PHP message: PHP   5. yii\base\Controller->runAction($id = *uninitialized*, $params = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Module.php:523
+PHP message: PHP   6. yii\base\InlineAction->runWithParams($params = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Controller.php:156
+PHP message: PHP   7. call_user_func_array(*uninitialized*, *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/InlineAction.php:57
+PHP message: PHP   8. frontend\controllers\BookController->actionIndex() /var/www/html/advanced/test/vendor/yiisoft/yii2/base/InlineAction.php:57
+PHP message: PHP   9. yii\base\Controller->render($view = *uninitialized*, $params = *uninitialized*) /var/www/html/advanced/test/frontend/controllers/BookController.php:55
+PHP message: PHP  10. yii\base\View->render($view = *uninitialized*, $params = *uninitialized*, $context = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Controller.php:381
+PHP message: PHP  11. yii\base\View->renderFile($viewFile = *uninitialized*, $params = *uninitialized*, $context = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php:152
+PHP message: PHP  12. yii\base\View->renderPhpFile($_file_ = *uninitialized*, $_params_ = *uni
+2017/05/18 17:27:19 [error] 1691#0: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'frontend\components\Hello' not found in /var/www/html/advanced/test/frontend/views/book/index.php on line 38
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/advanced/test/frontend/web/index.php:0
+PHP message: PHP   2. yii\base\Application->run() /var/www/html/advanced/test/frontend/web/index.php:16
+PHP message: PHP   3. yii\web\Application->handleRequest($request = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Application.php:380
+PHP message: PHP   4. yii\base\Module->runAction($route = *uninitialized*, $params = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/web/Application.php:102
+PHP message: PHP   5. yii\base\Controller->runAction($id = *uninitialized*, $params = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Module.php:523
+PHP message: PHP   6. yii\base\InlineAction->runWithParams($params = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Controller.php:156
+PHP message: PHP   7. call_user_func_array(*uninitialized*, *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/InlineAction.php:57
+PHP message: PHP   8. frontend\controllers\BookController->actionIndex() /var/www/html/advanced/test/vendor/yiisoft/yii2/base/InlineAction.php:57
+PHP message: PHP   9. yii\base\Controller->render($view = *uninitialized*, $params = *uninitialized*) /var/www/html/advanced/test/frontend/controllers/BookController.php:55
+PHP message: PHP  10. yii\base\View->render($view = *uninitialized*, $params = *uninitialized*, $context = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Controller.php:381
+PHP message: PHP  11. yii\base\View->renderFile($viewFile = *uninitialized*, $params = *uninitialized*, $context = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php:152
+PHP message: PHP  12. yii\base\View->renderPhpFile($_file_ = *uninitialized*, $_params_ = *uni
+2017/05/19 10:39:52 [error] 1544#0: *1 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock", host: "available.com"
+2017/05/19 10:42:38 [error] 1544#0: *18 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock", host: "available.com"
+2017/05/19 10:45:06 [error] 1544#0: *22 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock", host: "available.com"
+2017/05/19 10:59:17 [error] 1544#0: *47 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock", host: "available.com"
+2017/05/19 11:00:52 [error] 1544#0: *47 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock", host: "available.com"
+2017/05/19 11:08:18 [error] 1548#0: *81 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock", host: "available.com"
+2017/05/19 11:10:52 [error] 1548#0: *89 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock", host: "available.com"
+2017/05/19 13:57:19 [error] 1545#0: *194 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock", host: "available.com", referrer: "http://available.com/index.php?r=book%2Fview&id=5"
+2017/05/19 13:59:58 [error] 1545#0: *198 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock", host: "available.com", referrer: "http://available.com/index.php?r=book%2Fview&id=5"
+2017/05/19 14:03:12 [error] 1545#0: *200 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'frontend\models\Yii' not found in /var/www/html/advanced/test/frontend/models/Book.php on line 99
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/advanced/test/frontend/web/index.php:0
+PHP message: PHP   2. yii\base\Application->run() /var/www/html/advanced/test/frontend/web/index.php:16
+PHP message: PHP   3. yii\web\Application->handleRequest($request = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Application.php:380
+PHP message: PHP   4. yii\base\Module->runAction($route = *uninitialized*, $params = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/web/Application.php:102
+PHP message: PHP   5. yii\base\Controller->runAction($id = *uninitialized*, $params = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Module.php:523
+PHP message: PHP   6. yii\base\InlineAction->runWithParams($params = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Controller.php:156
+PHP message: PHP   7. call_user_func_array(*uninitialized*, *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/InlineAction.php:57
+PHP message: PHP   8. frontend\controllers\BookController->actionIndex() /var/www/html/advanced/test/vendor/yiisoft/yii2/base/InlineAction.php:57
+PHP message: PHP   9. yii\base\Controller->render($view = *uninitialized*, $params = *uninitialized*) /var/www/html/advanced/test/frontend/controllers/BookController.php:43
+PHP message: PHP  10. yii\base\View->render($view = *uninitialized*, $params = *uninitialized*, $context = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Controller.php:381
+PHP message: PHP  11. yii\base\View->renderFile($viewFile = *uninitialized*, $params = *uninitialized*, $context = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php:152
+PHP message: PHP  12. yii\base\View->renderPhpFile($_file_ = *uninitialized*, $_params_ = *uninitialize
+2017/05/19 14:03:12 [error] 1545#0: *200 FastCGI sent in stderr: "taColumn->getDataCellValue($model = *uninitialized*, $key = *uninitialized*, $index = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/grid/DataColumn.php:227
+PHP message: PHP  27. yii\helpers\BaseArrayHelper::getValue($array = *uninitialized*, $key = *uninitialized*, $default = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/grid/DataColumn.php:216
+PHP message: PHP  28. yii\db\BaseActiveRecord->__get($name = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/grid/DataColumn.php:209
+PHP message: PHP  29. yii\base\Component->__get($name = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/db/BaseActiveRecord.php:286
+PHP message: PHP  30. frontend\models\Book->getDescription() /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Component.php:132
+PHP message: PHP Fatal error:  Uncaught exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem('/var/www/html/a...', 133, 'yii\widgets\Bas...', 'yii\widgets\{cl...', Array, 13)
+#5 /var/...
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/advanced/test/frontend/web/index.php:0
+PHP message: PHP   2. yii\b
+2017/05/19 14:03:25 [error] 1545#0: *202 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Class 'frontend\models\Yii' not found in /var/www/html/advanced/test/frontend/models/Book.php on line 99
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/advanced/test/frontend/web/index.php:0
+PHP message: PHP   2. yii\base\Application->run() /var/www/html/advanced/test/frontend/web/index.php:16
+PHP message: PHP   3. yii\web\Application->handleRequest($request = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Application.php:380
+PHP message: PHP   4. yii\base\Module->runAction($route = *uninitialized*, $params = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/web/Application.php:102
+PHP message: PHP   5. yii\base\Controller->runAction($id = *uninitialized*, $params = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Module.php:523
+PHP message: PHP   6. yii\base\InlineAction->runWithParams($params = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Controller.php:156
+PHP message: PHP   7. call_user_func_array(*uninitialized*, *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/InlineAction.php:57
+PHP message: PHP   8. frontend\controllers\BookController->actionIndex() /var/www/html/advanced/test/vendor/yiisoft/yii2/base/InlineAction.php:57
+PHP message: PHP   9. yii\base\Controller->render($view = *uninitialized*, $params = *uninitialized*) /var/www/html/advanced/test/frontend/controllers/BookController.php:43
+PHP message: PHP  10. yii\base\View->render($view = *uninitialized*, $params = *uninitialized*, $context = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Controller.php:381
+PHP message: PHP  11. yii\base\View->renderFile($viewFile = *uninitialized*, $params = *uninitialized*, $context = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php:152
+PHP message: PHP  12. yii\base\View->renderPhpFile($_file_ = *uninitialized*, $_params_ = *uninitialize
+2017/05/19 14:03:25 [error] 1545#0: *202 FastCGI sent in stderr: "taColumn->getDataCellValue($model = *uninitialized*, $key = *uninitialized*, $index = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/grid/DataColumn.php:227
+PHP message: PHP  27. yii\helpers\BaseArrayHelper::getValue($array = *uninitialized*, $key = *uninitialized*, $default = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/grid/DataColumn.php:216
+PHP message: PHP  28. yii\db\BaseActiveRecord->__get($name = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/grid/DataColumn.php:209
+PHP message: PHP  29. yii\base\Component->__get($name = *uninitialized*) /var/www/html/advanced/test/vendor/yiisoft/yii2/db/BaseActiveRecord.php:286
+PHP message: PHP  30. frontend\models\Book->getDescription() /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Component.php:132
+PHP message: PHP Fatal error:  Uncaught exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem('/var/www/html/a...', 133, 'yii\widgets\Bas...', 'yii\widgets\{cl...', Array, 13)
+#5 /var/...
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/html/advanced/test/frontend/web/index.php:0
+PHP message: PHP   2. yii\b
+2017/05/19 14:03:26 [error] 1545#0: *202 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/index.php?r=book%2Fview&id=5"
+2017/05/19 14:04:34 [error] 1545#0: *202 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock", host: "available.com", referrer: "http://available.com/index.php?r=book%2Fview&id=5"
+2017/05/19 14:08:11 [error] 1545#0: *205 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock", host: "available.com"
+2017/05/19 14:10:04 [error] 1545#0: *205 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock", host: "available.com"
+2017/05/19 14:16:17 [error] 1545#0: *208 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem('/var/www/html/a...', 133, 'yii\widgets\Bas...', 'yii\widgets\{cl...'" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/index.php?r=book%2Fview&id=5"
+2017/05/19 14:16:25 [error] 1545#0: *208 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem('/var/www/html/a...', 133, 'yii\widgets\Bas...', 'yii\widgets\{cl...'" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/index.php?r=book%2Fview&id=5"
+2017/05/19 14:17:26 [error] 1545#0: *208 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem('/var/www/html/a...', 133, 'yii\widgets\Bas...', 'yii\widgets\{cl...'" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/index.php?r=book%2Fview&id=5"
+2017/05/19 14:17:55 [error] 1545#0: *208 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(249): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(308): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/exception.php(385): yii\web\ErrorHandler->renderCallStackItem('/var/www/html/a...', 133, 'yii\widgets\Bas...', 'yii\widgets\{cl...'" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/index.php?r=book%2Fview&id=5"
+2017/05/19 14:18:58 [error] 1545#0: *208 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock", host: "available.com", referrer: "http://available.com/index.php?r=book%2Fview&id=5"
+2017/05/19 14:20:20 [error] 1547#0: *229 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/html/advanced/test/frontend/views/site/error.php' in /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php:229
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/a...', Array, Object(frontend\controllers\SiteController))
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('error', Array, Object(frontend\controllers\SiteController))
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorAction.php(126): yii\base\Controller->render('error', Array)
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorAction.php(105): yii\web\ErrorAction->renderHtmlResponse()
+#4 [internal function]: yii\web\ErrorAction->run()
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#6" while reading upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=http%3A%2F%2Fsportkniga.com.ua%2Fimages%2Fbooks228577dtg3.jpg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/index.php?r=book%2Findex"
+2017/05/19 14:21:19 [error] 1547#0: *231 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/html/advanced/test/frontend/views/site/error.php' in /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php:229
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/a...', Array, Object(frontend\controllers\SiteController))
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('error', Array, Object(frontend\controllers\SiteController))
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorAction.php(126): yii\base\Controller->render('error', Array)
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorAction.php(105): yii\web\ErrorAction->renderHtmlResponse()
+#4 [internal function]: yii\web\ErrorAction->run()
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#6" while reading upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=https%3A%2F%2Fbooks.google.com%2Fbooks%2Fcontent%3Fid%3D-HPKDQAAQBAJ%26printsec%3Dfrontcover%26img%3D1%26zoom%3D5%26edge%3Dcurl%26source%3Dgbs_api HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/index.php?r=book%2Findex"
+2017/05/19 14:34:57 [error] 1547#0: *246 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/html/advanced/test/frontend/views/site/error.php' in /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php:229
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/a...', Array, Object(frontend\controllers\SiteController))
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('error', Array, Object(frontend\controllers\SiteController))
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorAction.php(126): yii\base\Controller->render('error', Array)
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorAction.php(105): yii\web\ErrorAction->renderHtmlResponse()
+#4 [internal function]: yii\web\ErrorAction->run()
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#6" while reading upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=var%2Fwww%2Fhtml%2Fadvanced%2Ftest%2Ffrontend%2Fweb%2Fuploads%2Fbook.jpg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/index.php?r=book%2Findex"
+2017/05/19 14:35:33 [error] 1547#0: *246 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/html/advanced/test/frontend/views/site/error.php' in /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php:229
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/a...', Array, Object(frontend\controllers\SiteController))
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('error', Array, Object(frontend\controllers\SiteController))
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorAction.php(126): yii\base\Controller->render('error', Array)
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorAction.php(105): yii\web\ErrorAction->renderHtmlResponse()
+#4 [internal function]: yii\web\ErrorAction->run()
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#6" while reading upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=frontend%2Fweb%2Fuploads%2Fbook.jpg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/index.php?r=book%2Findex"
+2017/05/19 14:37:51 [error] 1547#0: *277 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/html/advanced/test/frontend/views/site/error.php' in /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php:229
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/a...', Array, Object(frontend\controllers\SiteController))
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('error', Array, Object(frontend\controllers\SiteController))
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorAction.php(126): yii\base\Controller->render('error', Array)
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorAction.php(105): yii\web\ErrorAction->renderHtmlResponse()
+#4 [internal function]: yii\web\ErrorAction->run()
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#6" while reading upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=var%2Fwww%2Fhtml%2Fadvanced%2Ftest%2Ffrontend%2Fweb%2Fuploads%2FBook.jpg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/index.php?r=book%2Findex"
+2017/05/19 14:37:56 [error] 1547#0: *277 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/html/advanced/test/frontend/views/site/error.php' in /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php:229
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/a...', Array, Object(frontend\controllers\SiteController))
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('error', Array, Object(frontend\controllers\SiteController))
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorAction.php(126): yii\base\Controller->render('error', Array)
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorAction.php(105): yii\web\ErrorAction->renderHtmlResponse()
+#4 [internal function]: yii\web\ErrorAction->run()
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#6" while reading upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=var%2Fwww%2Fhtml%2Fadvanced%2Ftest%2Ffrontend%2Fweb%2Fuploads%2FBook.jpg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/index.php?r=book%2Findex"
+2017/05/19 14:38:36 [error] 1547#0: *277 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /var/www/html/advanced/test/frontend/views/site/error.php' in /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php:229
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/var/www/html/a...', Array, Object(frontend\controllers\SiteController))
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('error', Array, Object(frontend\controllers\SiteController))
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorAction.php(126): yii\base\Controller->render('error', Array)
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorAction.php(105): yii\web\ErrorAction->renderHtmlResponse()
+#4 [internal function]: yii\web\ErrorAction->run()
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array(Array, Array)
+#6" while reading upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=uploads%2FBook.jpg HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/index.php?r=book%2Findex"
+2017/05/19 14:58:03 [error] 1547#0: *350 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\widgets\BaseListView::yii\widgets\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('yii\widgets\Bas...', 'yii\widgets\{cl...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\widgets\Bas...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/E" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com"
+2017/05/19 15:44:26 [error] 1544#0: *491 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method GuzzleHttp\Middleware::GuzzleHttp\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('GuzzleHttp\Midd...', 'GuzzleHttp\{clo...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('GuzzleHttp\Midd...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/Error" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com"
+2017/05/19 15:44:59 [error] 1544#0: *491 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method GuzzleHttp\Middleware::GuzzleHttp\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('GuzzleHttp\Midd...', 'GuzzleHttp\{clo...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('GuzzleHttp\Midd...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/Error" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com"
+2017/05/19 15:47:08 [error] 1544#0: *500 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method GuzzleHttp\Middleware::GuzzleHttp\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('GuzzleHttp\Midd...', 'GuzzleHttp\{clo...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('GuzzleHttp\Midd...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/Error" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Findex HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com"
+2017/05/19 15:47:30 [error] 1544#0: *500 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method GuzzleHttp\Middleware::GuzzleHttp\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('GuzzleHttp\Midd...', 'GuzzleHttp\{clo...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('GuzzleHttp\Midd...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/Error" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Fview&id=4 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/index.php?r=book%2Findex"
+2017/05/19 15:47:49 [error] 1544#0: *500 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method GuzzleHttp\Middleware::GuzzleHttp\{closure}() does not exist' in /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php:199
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(199): ReflectionMethod->__construct('GuzzleHttp\Midd...', 'GuzzleHttp\{clo...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('GuzzleHttp\Midd...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(328): require('/var/www/html/a...')
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/var/www/html/a...', Array)
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/ErrorHandler.php(253): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/Error" while reading response header from upstream, client: 127.0.0.1, server: available.com, request: "GET /index.php?r=book%2Fview&id=4 HTTP/1.1", upstream: "fastcgi://unix:/var/run/php5-fpm.sock:", host: "available.com", referrer: "http://available.com/index.php?r=book%2Findex"

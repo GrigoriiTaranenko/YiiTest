@@ -3,6 +3,9 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use frontend\components\Hello;
+//use frontend\assets\AppAsset;
+use yii\helpers\Json;
 
 /* @var $this yii\web\View */
 /* @var $searchModel frontend\models\BookSearch */
@@ -31,7 +34,18 @@ $this->params['breadcrumbs'][] = $this->title;
                 'attribute' => 'type',
                 'filter' => Html::activeDropDownList($searchModel, 'type',$searchModel->mapType),
             ],
+            'isbn',
+           /* 'description',
+            [
+                'attribute' => 'picture',
+                'format' => 'image',
+            ],*/
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
+    <?php
+ //       $bundle = AppAsset::register($this);
+ //       echo(Html::img($bundle->sourcePath.'/Book.jpg'));
+
+    ?>
 </div>
