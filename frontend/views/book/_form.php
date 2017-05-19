@@ -7,7 +7,7 @@ use yii\widgets\ActiveForm;
 /* @var $model frontend\models\Book */
 /* @var $form yii\widgets\ActiveForm */
 ?>
-
+<div class="raw"></div>
 <div class="book-form">
 
     <?php $form = ActiveForm::begin(); ?>
@@ -15,15 +15,20 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'year')->textInput() ?>
-
-    <?= $form->field($model, 'id_book_type')->dropDownList($model->typeModel) ?>
+        <div class="col-lg-10">
+        <?= $form->field($model, 'id_book_type')->dropDownList($model->typeModel) ?>
+        </div>
+        <div class="col-lg-2">
+            <br>
+            <?=Html::button(   'Добавить Жанр', ['class'=>'btn btn-success'])?>
+            <br>
+        </div>
 
     <?= $form->field($model, 'isbn')->textinput() ?>
 
     <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+        <?= Html::submitButton($model->isNewRecord ? 'Добавить' : 'Изменить', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
-
 </div>

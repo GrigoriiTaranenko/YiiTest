@@ -15,7 +15,6 @@ use GuzzleHttp\Client; // подключаем Guzzle
 use GuzzleHttp\RequestOptions;
 use yii\helpers\Url;
 use yii\helpers\Json;
-use frontend\assets\AppAsset;
 
 
 /**
@@ -57,7 +56,8 @@ class Book extends ActiveRecord
             'id_book_type' => 'Жанр книги',
             'type' => 'Жанр',
             'isbn' => 'ISBN книги',
-            'description'=>'Описание'
+            'description'=>'Описание',
+            'picture'=>'Обложка'
         ];
     }
 
