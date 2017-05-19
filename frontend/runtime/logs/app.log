@@ -1,0 +1,315 @@
+2017-05-19 13:47:26 [127.0.0.1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23505]: Unique violation: 7 ERROR:  duplicate key value violates unique constraint "id_prima"
+DETAIL:  Key (id)=(4) already exists.' in /var/www/html/advanced/test/vendor/yiisoft/yii2/db/Command.php:902
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/Command.php(902): PDOStatement->execute()
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/pgsql/Schema.php(530): yii\db\Command->queryOne()
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/ActiveRecord.php(494): yii\db\pgsql\Schema->insert('<span class="st...', '[<span class="s...')
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/ActiveRecord.php(461): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/BaseActiveRecord.php(635): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#6 /var/www/html/advanced/test/frontend/controllers/BookController.php(68): yii\db\BaseActiveRecord->save()
+#7 [internal function]: frontend\controllers\BookController->actionCreate()
+#8 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#9 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /var/www/html/advanced/test/frontend/web/index.php(16): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23505]: Unique violation: 7 ERROR:  duplicate key value violates unique constraint "id_prima"
+DETAIL:  Key (id)=(4) already exists.
+The SQL being executed was: INSERT INTO "book" ("name", "year", "id_book_type", "isbn") VALUES ('Григо', 1234, 2, '5425051670') RETURNING "id"' in /var/www/html/advanced/test/vendor/yiisoft/yii2/db/Schema.php:636
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/Command.php(917): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO "bo...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/pgsql/Schema.php(530): yii\db\Command->queryOne()
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/ActiveRecord.php(494): yii\db\pgsql\Schema->insert('<span class="st...', '[<span class="s...')
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/ActiveRecord.php(461): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/BaseActiveRecord.php(635): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#6 /var/www/html/advanced/test/frontend/controllers/BookController.php(68): yii\db\BaseActiveRecord->save()
+#7 [internal function]: frontend\controllers\BookController->actionCreate()
+#8 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#9 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /var/www/html/advanced/test/frontend/web/index.php(16): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 23505
+    [1] => 7
+    [2] => ERROR:  duplicate key value violates unique constraint "id_prima"
+DETAIL:  Key (id)=(4) already exists.
+)
+
+2017-05-19 13:47:26 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'book/create'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'dFZMTWdQZTkjOBoFCQ9QfyQgPyAxNjZtPxAtPysPCWY8BDk7FhsfWA=='
+    'Book' => [
+        'name' => 'Григо'
+        'year' => '1234'
+        'id_book_type' => '2'
+        'isbn' => '5425051670'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'c6t4n6f0l22qerkr04s6j669v7'
+    '_csrf-frontend' => 'a3fa5a4f4550cebea583589424f16d3a9f3e99a75bd70d33bdff6d74aef01220a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"WnVHn_5FPvsmVfSTKFarL_l_HRuvqKza\";}'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => 'r=book%2Fcreate'
+    'REQUEST_METHOD' => 'POST'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '192'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced/test/frontend/web/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=book%2Fcreate'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/var/www/html/advanced/test/frontend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.6'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '45258'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'available.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'available.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CONTENT_LENGTH' => '192'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://available.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://available.com/index.php?r=book%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=c6t4n6f0l22qerkr04s6j669v7; _csrf-frontend=a3fa5a4f4550cebea583589424f16d3a9f3e99a75bd70d33bdff6d74aef01220a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22WnVHn_5FPvsmVfSTKFarL_l_HRuvqKza%22%3B%7D'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1495201645.9634
+    'REQUEST_TIME' => 1495201645
+]
+2017-05-19 13:47:33 [127.0.0.1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23505]: Unique violation: 7 ERROR:  duplicate key value violates unique constraint "id_prima"
+DETAIL:  Key (id)=(5) already exists.' in /var/www/html/advanced/test/vendor/yiisoft/yii2/db/Command.php:902
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/Command.php(902): PDOStatement->execute()
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/pgsql/Schema.php(530): yii\db\Command->queryOne()
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/ActiveRecord.php(494): yii\db\pgsql\Schema->insert('<span class="st...', '[<span class="s...')
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/ActiveRecord.php(461): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/BaseActiveRecord.php(635): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#6 /var/www/html/advanced/test/frontend/controllers/BookController.php(68): yii\db\BaseActiveRecord->save()
+#7 [internal function]: frontend\controllers\BookController->actionCreate()
+#8 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#9 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /var/www/html/advanced/test/frontend/web/index.php(16): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23505]: Unique violation: 7 ERROR:  duplicate key value violates unique constraint "id_prima"
+DETAIL:  Key (id)=(5) already exists.
+The SQL being executed was: INSERT INTO "book" ("name", "year", "id_book_type", "isbn") VALUES ('Григо', 1234, 2, '5425051670') RETURNING "id"' in /var/www/html/advanced/test/vendor/yiisoft/yii2/db/Schema.php:636
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/Command.php(917): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO "bo...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/pgsql/Schema.php(530): yii\db\Command->queryOne()
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/ActiveRecord.php(494): yii\db\pgsql\Schema->insert('<span class="st...', '[<span class="s...')
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/ActiveRecord.php(461): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/BaseActiveRecord.php(635): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#6 /var/www/html/advanced/test/frontend/controllers/BookController.php(68): yii\db\BaseActiveRecord->save()
+#7 [internal function]: frontend\controllers\BookController->actionCreate()
+#8 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#9 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /var/www/html/advanced/test/frontend/web/index.php(16): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 23505
+    [1] => 7
+    [2] => ERROR:  duplicate key value violates unique constraint "id_prima"
+DETAIL:  Key (id)=(5) already exists.
+)
+
+2017-05-19 13:47:33 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'book/create'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'R2V2bExZRloQCyAkIgZzHBcTBQEaPxUODCMXHgAGKgUPNwMaPRI8Ow=='
+    'Book' => [
+        'name' => 'Григо'
+        'year' => '1234'
+        'id_book_type' => '2'
+        'isbn' => '5425051670'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'c6t4n6f0l22qerkr04s6j669v7'
+    '_csrf-frontend' => 'a3fa5a4f4550cebea583589424f16d3a9f3e99a75bd70d33bdff6d74aef01220a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"WnVHn_5FPvsmVfSTKFarL_l_HRuvqKza\";}'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => 'r=book%2Fcreate'
+    'REQUEST_METHOD' => 'POST'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '192'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced/test/frontend/web/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=book%2Fcreate'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/var/www/html/advanced/test/frontend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.6'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '45258'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'available.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'available.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CONTENT_LENGTH' => '192'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://available.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://available.com/index.php?r=book%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=c6t4n6f0l22qerkr04s6j669v7; _csrf-frontend=a3fa5a4f4550cebea583589424f16d3a9f3e99a75bd70d33bdff6d74aef01220a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22WnVHn_5FPvsmVfSTKFarL_l_HRuvqKza%22%3B%7D'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1495201653.7196
+    'REQUEST_TIME' => 1495201653
+]
+2017-05-19 13:47:50 [127.0.0.1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23505]: Unique violation: 7 ERROR:  duplicate key value violates unique constraint "id_prima"
+DETAIL:  Key (id)=(6) already exists.' in /var/www/html/advanced/test/vendor/yiisoft/yii2/db/Command.php:902
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/Command.php(902): PDOStatement->execute()
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/pgsql/Schema.php(530): yii\db\Command->queryOne()
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/ActiveRecord.php(494): yii\db\pgsql\Schema->insert('<span class="st...', '[<span class="s...')
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/ActiveRecord.php(461): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/BaseActiveRecord.php(635): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#6 /var/www/html/advanced/test/frontend/controllers/BookController.php(68): yii\db\BaseActiveRecord->save()
+#7 [internal function]: frontend\controllers\BookController->actionCreate()
+#8 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#9 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /var/www/html/advanced/test/frontend/web/index.php(16): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23505]: Unique violation: 7 ERROR:  duplicate key value violates unique constraint "id_prima"
+DETAIL:  Key (id)=(6) already exists.
+The SQL being executed was: INSERT INTO "book" ("name", "year", "id_book_type", "isbn") VALUES ('Григо', 1234, 2, '5425051670') RETURNING "id"' in /var/www/html/advanced/test/vendor/yiisoft/yii2/db/Schema.php:636
+Stack trace:
+#0 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/Command.php(917): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO "bo...')
+#1 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/pgsql/Schema.php(530): yii\db\Command->queryOne()
+#3 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/ActiveRecord.php(494): yii\db\pgsql\Schema->insert('<span class="st...', '[<span class="s...')
+#4 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/ActiveRecord.php(461): yii\db\ActiveRecord->insertInternal('<span class="ke...')
+#5 /var/www/html/advanced/test/vendor/yiisoft/yii2/db/BaseActiveRecord.php(635): yii\db\ActiveRecord->insert('<span class="ke...', '<span class="ke...')
+#6 /var/www/html/advanced/test/frontend/controllers/BookController.php(68): yii\db\BaseActiveRecord->save()
+#7 [internal function]: frontend\controllers\BookController->actionCreate()
+#8 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#9 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#10 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#11 /var/www/html/advanced/test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#12 /var/www/html/advanced/test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /var/www/html/advanced/test/frontend/web/index.php(16): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 23505
+    [1] => 7
+    [2] => ERROR:  duplicate key value violates unique constraint "id_prima"
+DETAIL:  Key (id)=(6) already exists.
+)
+
+2017-05-19 13:47:50 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'book/create'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'R2V2bExZRloQCyAkIgZzHBcTBQEaPxUODCMXHgAGKgUPNwMaPRI8Ow=='
+    'Book' => [
+        'name' => 'Григо'
+        'year' => '1234'
+        'id_book_type' => '2'
+        'isbn' => '5425051670'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'c6t4n6f0l22qerkr04s6j669v7'
+    '_csrf-frontend' => 'a3fa5a4f4550cebea583589424f16d3a9f3e99a75bd70d33bdff6d74aef01220a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"WnVHn_5FPvsmVfSTKFarL_l_HRuvqKza\";}'
+]
+
+$_SERVER = [
+    'USER' => 'www-data'
+    'HOME' => '/var/www'
+    'FCGI_ROLE' => 'RESPONDER'
+    'QUERY_STRING' => 'r=book%2Fcreate'
+    'REQUEST_METHOD' => 'POST'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '192'
+    'SCRIPT_FILENAME' => '/var/www/html/advanced/test/frontend/web/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index.php?r=book%2Fcreate'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/var/www/html/advanced/test/frontend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.4.6'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '45258'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_NAME' => 'available.com'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'available.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CONTENT_LENGTH' => '192'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://available.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://available.com/index.php?r=book%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'advanced-frontend=c6t4n6f0l22qerkr04s6j669v7; _csrf-frontend=a3fa5a4f4550cebea583589424f16d3a9f3e99a75bd70d33bdff6d74aef01220a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22WnVHn_5FPvsmVfSTKFarL_l_HRuvqKza%22%3B%7D'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1495201670.2552
+    'REQUEST_TIME' => 1495201670
+]

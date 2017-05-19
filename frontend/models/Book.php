@@ -95,6 +95,7 @@ class Book extends ActiveRecord
 
     public function getDescription()
     {
+        if ($this->isbn=='') return 'Нет описание';
         $request = $this->clientMethod();
         $response = json_decode($request->getBody());
         $response = $response->items[0]->volumeInfo->description;
@@ -104,6 +105,7 @@ class Book extends ActiveRecord
 
     public function getPicture()
     {
+        if ($this->isbn=='') return '/upload/Book.jpg';
         $request =$this->clientMethod();
         $response = json_decode($request->getBody());
         $checkPicture = $response->items[0]->volumeInfo->readingModes->image;
