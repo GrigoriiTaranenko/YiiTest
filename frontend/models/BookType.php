@@ -9,7 +9,6 @@
 
 namespace frontend\models;
 
-
 use Yii;
 
 /**
@@ -59,19 +58,4 @@ class BookType extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Book::className(), ['id_book_type' => 'id']);
     }
-    public function getMapType()
-    {
-        $Mas = BookType::find()->asArray()->all();
-        $Mas = ArrayHelper::map($Mas, 'id', 'type');
-        $Mas[0] = 'Все';
-        ksort($Mas);
-        return $Mas;
-    }
-
-    public function getTypeModel()
-    {
-        $Mas = BookType::find()->asArray()->all();
-        return ArrayHelper::map($Mas, 'id', 'type');
-    }
-
 }
