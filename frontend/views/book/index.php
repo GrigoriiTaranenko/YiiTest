@@ -10,10 +10,10 @@ use yii\helpers\Json;
 /* @var $this yii\web\View */
 /* @var $searchModel frontend\models\BookSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
-
 $this->title = 'Книга';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+<p>Hello world</p>
 <div class="book-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
